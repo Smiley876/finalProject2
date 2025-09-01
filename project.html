@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Final project: Part1</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+     <style>
+      body {
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3 {
+  font-weight: 600;
+}
+section, .menu-section, aside {
+  margin-bottom: 3rem;
+}
+      .navbar{
+        background-color: hsl(0, 89%, 45%);
+       
+      }
+      .navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  filter: invert(100%); /* makes it white */
+}
+
+      .navbar .nav-link{
+         color:aliceblue;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: clamp(14px, 2vw, 18px); /* scales between 14px and 18px */
+      }
+      .navbar .nav-link:hover
+        {
+            color:#d65252;
+        }
+        .navbar-brand img{
+          padding-left: 10%;
+           max-height: 60px; 
+            width: auto;
+            height: auto;
+        }
+ .banner-image {
+    height: clamp(200px, 25vh, 300px);
+}
+
+aside {
+    background-color: #f3e8ff;  /* light complementary color */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+aside h3 {
+    font-size: clamp(20px, 2.5vw, 28px);  /* responsive font */
+    margin-bottom: 20px;
+}
+
+aside p {
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.6;
+}
+.menu-section {
+  background-color: #b30000; /* rich red background */
+  border-radius: 10px;       /* smooth edges */
+  border: 4px solid #ff4d4d;      /* thick contrasting border */
+  border-radius: 15px;            /* smoother corners */
+  box-shadow: 0 0 15px rgba(179,0,0,0.4); /* subtle glow */
+  padding: 30px;
+}
+
+.menu-section h2 {
+  color: #fff;               /* white heading text for contrast */
+}
+.card-img-top {
+  height: 180px;
+  object-fit: cover; /* crops nicely */
+  border-bottom: 2px solid #eee;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+
+footer {
+  background: linear-gradient(135deg, #111, #333);
+  border-top: 4px solid #b30000;
+}
+footer p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+footer .btn {
+  background-color: #b30000;
+  border: none;
+}
+footer .btn:hover {
+  background-color: #ff4d4d;
+}
+
+
+     </style>
+    </head>
+
+    <body>
+        <header> <!--Navbar-->
+            <nav class="navbar sticky-top navbar-expand-lg"> 
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="https://img.freepik.com/free-vector/culture-logo-design-template_23-2149909702.jpg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                    </ul>
+                 </div>
+                 </div>
+            </nav>
+        </header>
+
+        <!--Banner-->
+        <div class="banner-image d-flex flex-column align-items-center justify-content-center text-white"  
+         style="height: 250px; background: linear-gradient(135deg, #f12c2c, #f6ffa6);">
+            <h1 class="display-5 display-md-4 fw-bold mb-2">Welcome to My Cultural Journey</h1>  
+            <p class="lead  fs-6 fs-md-5">Exploring East Asian Culture & Creativity</p>
+        </div>
+
+        <!-- About -->
+<div class="container my-5">
+  <div class="row">
+    <!-- Aside on the left -->
+    <div class="col-md-4">
+      <aside class="p-4 bg-light rounded shadow">
+        <h3 class="text-center">Hi, I'm Anzel</h3>
+        <p class="text-center">
+          "Curious about cherry blossoms, Asian dramas, and food? <br>
+          So am I. <br>
+          This space is where I explore East Asian culture, creativity, and meaningful learning."
+        </p>
+      </aside>
+    </div>
+
+  
+        <!--projects-->
+        <!-- menu -->
+    <div class="col-md-8">
+        <section>  
+        <div class="container">
+            <h2 class="text-center">Menu</h2> <br>
+
+           <!-- Food section on the right of aside -->
+    
+      <h3>Main dishes</h3>
+       <section class="menu-section border border-danger p-4 my-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/buns.jpeg" class="card-img-top img-fluid" alt="steamed buns">
+      <div class="card-body">
+        <h5 class="card-title">Steamed Buns</h5>
+        <p class="card-text">Soft, fluffy buns filled with savory pork, chicken, or vegetables. Lightly steamed to perfection — a classic Asian snack or appetizer</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/chicken.jpeg" class="card-img-top img-fluid" alt="butter chicken">
+      <div class="card-body">
+        <h5 class="card-title">Butter chicken</h5>
+        <p class="card-text">Tender chicken simmered in a creamy, mildly spiced tomato sauce. Served with aromatic rice or naan bread — a comforting Indian favorite.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/hotpot.jpeg" class="card-img-top img-fluid" alt="hotpot">
+      <div class="card-body">
+        <h5 class="card-title">Hotpt</h5>
+        <p class="card-text">A bubbling pot of rich broth served with fresh vegetables, thinly sliced meats, and noodles. Customize your flavor and cook ingredients to your liking.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/noodles.jpeg" class="card-img-top img-fluid" alt="noodles">
+      <div class="card-body">
+        <h5 class="card-title">Noodles</h5>
+        <p class="card-text">Stir-fried or in broth, our noodles come with fresh vegetables and your choice of meat or tofu. A satisfying and flavorful dish from East Asia.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/pork.jpeg" class="card-img-top img-fluid" alt="sweet and sour pork">
+      <div class="card-body">
+        <h5 class="card-title">Sweet & Sour Pork</h5>
+        <p class="card-text">Crispy pork tossed in a vibrant sweet and tangy sauce with bell peppers and pineapple. A perfect balance of flavors and textures.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/tteokbokki.jpeg" class="card-img-top img-fluid" alt="tteokbokki">
+      <div class="card-body">
+        <h5 class="card-title">Tteokbokki</h5>
+        <p class="card-text">Chewy Korean rice cakes in a spicy, slightly sweet gochujang sauce. Served hot for a flavorful and comforting snack or main dish.</p>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- close the row here -->
+</section>
+  </div>
+
+    </div>
+   
+
+
+  <!-- Festivals stacked below aside -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <h3 class="text-start">Festivals</h3>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.sx9UxyuNyIrKzC8AG3yfWAHaEG?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded" alt="project3">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="https://www.trafalgar.com/real-word/wp-content/uploads/sites/3/2020/12/woman-holi-festival-india-copy-1024x683.jpeg" class="img-fluid rounded" alt="project4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dramas stacked below aside -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <h3 class="text-start">Dramas</h3>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.P5YrhtidYLgUXuMTjzi0ygHaE8?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded" alt="project5">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="https://thf.bing.com/th/id/OIP.226xoAYWc3KFZ8HG5CC-JgHaKk?w=120&h=180&c=7&r=0&o=7&cb=thfc1&pid=1.7&rm=3" class="img-fluid rounded" alt="project6">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </section>
+
+       
+         
+
+        <footer class="border border-light-subtle  bg-dark text-white text-center py-4 mt-5"> <!--contacts-->
+           <p class="mb-2">Thanks for visiting—may your journey through East Asian stories be as vibrant as cherry blossoms in spring.</p>
+           <button class="btn btn-primary btn-sm" onclick="backTop()">Go back to top</button>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-zOG6N3v3Hk6nYf23R+Z3V8dYqODZTfGywHLSGxUrXCeC1H+ne2EwZXoYjHf6PFdm" crossorigin="anonymous"></script>
+        <script>
+          //make button function
+          function backTop()
+          {
+            window.scrollTo({
+              top:0,
+              behavior:'smooth'
+            });
+          }
+        </script>
+    </body>
+</html>
